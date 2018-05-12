@@ -25,9 +25,9 @@ public class DealerTest {
     @Before
     public void before() {
         dealer = new Dealer("Ewen's of Cornhill", 100000.00);
-        engine = new VehicleEngine("Petrol", "1000");
-        tyre = new Tyre("Goodyear", 18, "Winter");
-        door = new Door("Pull", "Blue");
+        engine = new VehicleEngine("Petrol", "1000", 100);
+        tyre = new Tyre("Goodyear", 18, "Winter", 20);
+        door = new Door("Pull", "Blue", 300);
         customer1 = new Customer("Sarah", 30000);
         customer2 = new Customer("Paul", 5000);
         car = new Car("Clio", 10000, "Blue", engine, tyre, 4, door);

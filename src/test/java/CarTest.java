@@ -16,9 +16,9 @@ public class CarTest {
 
     @Before
     public void before() {
-        engine = new VehicleEngine("Petrol", "1000");
-        tyre = new Tyre("Goodyear", 18, "Winter");
-        door = new Door("Pull", "Blue");
+        engine = new VehicleEngine("Petrol", "1000", 1000);
+        tyre = new Tyre("Goodyear", 18, "Winter", 20);
+        door = new Door("Pull", "Blue", 100);
         car = new Car("Clio", 10000, "Blue", engine, tyre, 4, door );
 
     }

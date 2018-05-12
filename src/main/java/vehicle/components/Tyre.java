@@ -4,23 +4,29 @@ public class Tyre {
 
     private String brand;
     private int size;
-    private String Treadtype;
+    private String treadtype;
+    private double price;
 
-    public Tyre(String brand, int size, String treadtype) {
+    public Tyre(String brand, int size, String treadtype, double price) {
         this.brand = brand;
         this.size = size;
-        Treadtype = treadtype;
+        this.treadtype = treadtype;
+        this.price = price;
     }
 
     public String getBrand() {
-        return brand;
+        return this.brand;
     }
 
     public int getSize() {
-        return size;
+        return this.size;
     }
 
     public String getTreadtype() {
-        return Treadtype;
+        return this.treadtype;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }

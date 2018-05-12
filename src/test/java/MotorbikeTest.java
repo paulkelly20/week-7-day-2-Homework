@@ -16,8 +16,8 @@ public class MotorbikeTest {
 
         @Before
         public void before() {
-            engine = new VehicleEngine("Petrol", "2000");
-            tyre = new Tyre("Michelin", 15, "Summer");
+            engine = new VehicleEngine("Petrol", "2000" ,1000);
+            tyre = new Tyre("Michelin", 15, "Summer", 100);
             bike = new Motorbike ("Harley Davidson", 20000, "Black", engine, tyre, 2);
 
         }

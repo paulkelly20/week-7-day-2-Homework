@@ -16,9 +16,9 @@ public class VanTest {
 
     @Before
     public void before() {
-        engine = new VehicleEngine("Diesel", "500");
-        tyre = new Tyre("Continental", 16, "Summer");
-        door = new Door("Slide", "White");
+        engine = new VehicleEngine("Diesel", "500", 1000);
+        tyre = new Tyre("Continental", 16, "Summer", 100);
+        door = new Door("Slide", "White", 250);
         van = new Van("Transit", 15000, "White", engine, tyre, 4, door );
 
     }
