@@ -65,4 +65,10 @@ public class CustomerTest {
     public void canCustomerAffordRepair() {
         assertEquals(true, customer1.canAffordRepair(engine, 1));
     }
+
+    @Test
+    public void customerPaysForRepair() {
+        customer2.payForRepair(engine, 1);
+        assertEquals(4000, customer2.getWallet(), 0);
+    }
 }
