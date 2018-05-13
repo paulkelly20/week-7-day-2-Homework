@@ -78,4 +78,10 @@ public class DealerTest {
         dealer.dealerBuysVehicle(car);
         assertEquals(92000, dealer.getTill(), 0);
     }
+
+    @Test
+    public void addPartToDealerStock() {
+        dealer.addPartsToStock(engine);
+        assertEquals(1, dealer.getPartsCount());
+    }
 }

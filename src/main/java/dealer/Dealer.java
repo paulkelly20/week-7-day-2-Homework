@@ -28,6 +28,10 @@ public class Dealer {
         return name;
     }
 
+    public int getPartsCount() {
+        return parts.size();
+    }
+
     public double getTill() {
         return till;
     }
