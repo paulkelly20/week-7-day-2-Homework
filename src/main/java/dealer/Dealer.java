@@ -64,6 +64,8 @@ public class Dealer {
         this.till += vehicle.rentalPrice(days);
     }
 
+    
+
 
 
 

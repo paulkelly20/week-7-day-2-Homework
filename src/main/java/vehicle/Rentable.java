@@ -2,6 +2,7 @@ package vehicle;
 
 public interface Rentable {
 
-    double rentalPrice( int rentaldays);
+    double rentalPrice(
+            int rentaldays);
 
 }

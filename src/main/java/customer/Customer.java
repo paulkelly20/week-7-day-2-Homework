@@ -2,6 +2,7 @@ package customer;
 
 
 import vehicle.Rentable;
+import vehicle.Sellable;
 import vehicle.Vehicle;
 
 public class Customer {
@@ -50,6 +51,20 @@ public class Customer {
             this.wallet -= vehicle.rentalPrice(days);
         }
 
+    }
+
+    public boolean canAffordRepair(Sellable part, int quantity){
+        if(this.wallet >= part.sell(quantity)){
+            return true;
+        }
+        else return false;
+
+    }
+
+    public void payForRepair(Sellable part, int quantity){
+        if(canAffordRepair(part, quantity)){
+            this.wallet -= part.sell(quantity);
+        }
     }
 
 

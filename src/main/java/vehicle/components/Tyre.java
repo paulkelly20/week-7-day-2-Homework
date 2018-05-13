@@ -29,4 +29,8 @@ public class Tyre {
     public double getPrice() {
         return price;
     }
+
+    public double sell(int quantity) {
+        return this.price * quantity;
+    }
 }

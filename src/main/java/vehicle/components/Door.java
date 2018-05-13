@@ -1,6 +1,9 @@
 package vehicle.components;
 
-public class Door {
+import customer.Customer;
+import vehicle.Sellable;
+
+public class Door implements Sellable {
 
     private String handle;
     private String colour;
@@ -22,5 +25,22 @@ public class Door {
 
     public String getColour() {
         return colour;
+    }
+
+    public void setHandle(String handle) {
+        this.handle = handle;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+
+    public double sell(int quantity) {
+        return this.price * quantity;
     }
 }

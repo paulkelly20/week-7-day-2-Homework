@@ -24,13 +24,9 @@ public abstract class Vehicle {
     public abstract String start();
 
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice() { return price; }
 
     public String getColour() {
         return colour;

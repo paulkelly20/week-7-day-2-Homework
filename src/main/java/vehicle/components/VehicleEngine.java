@@ -1,8 +1,9 @@
 package vehicle.components;
 
 
+import vehicle.Sellable;
 
-public class VehicleEngine {
+public class VehicleEngine implements Sellable {
 
     private String type;
     private String power;
@@ -24,6 +25,10 @@ public class VehicleEngine {
 
     public double getPrice() {
         return price;
+    }
+
+    public double sell(int quantity) {
+        return this.price * quantity;
     }
 }
 
