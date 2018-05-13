@@ -56,7 +56,10 @@ public class Dealer {
 
     public void addPartsToStock(Sellable part){
         this.parts.add(part);
-        this.till -= (part.getPrice() * 0.8);
+    }
+
+    public double dealerRepairPartPrice(Sellable part){
+        return part.getPrice() *0.5;
     }
 
     public double dealerWholesalePrice(Vehicle vehicle){
@@ -76,11 +79,11 @@ public class Dealer {
         this.till += vehicle.rentalPrice(days);
     }
 
-//    public void repair(Sellable part, Customer customer, int quantity){
-//        this.rentables.remove(vehicle);
-//        customer.payForRental(vehicle, days);
-//        this.till += vehicle.rentalPrice(days);
-//    }
+    public void repair(Sellable part, Customer customer, int quantity){
+        this.parts.remove(part);
+        customer.payForRepair(part, quantity);
+        this.till += part.getPrice();
+    }
 
 
 

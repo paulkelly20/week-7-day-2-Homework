@@ -84,4 +84,12 @@ public class DealerTest {
         dealer.addPartsToStock(engine);
         assertEquals(1, dealer.getPartsCount());
     }
+
+    @Test
+    public void customersCarIsRepaired() {
+        dealer.addPartsToStock(engine);
+        dealer.repair(engine, customer1, 1);
+        assertEquals(100100, dealer.getTill(), 0);
+        assertEquals(0, dealer.getPartsCount());
+    }
 }
